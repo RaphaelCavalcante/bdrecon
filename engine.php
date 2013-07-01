@@ -28,7 +28,7 @@
 			$this->close();
 		}
 		function genPerfil(){
-			$perfil=$obj->cavalo(rand(0,3), rand(0,4), rand(0,3), rand(0,4));
+			$perfil=$obj->criaRoupa(rand(0,3), rand(0,4), rand(0,3), rand(0,4));
 			return $perfil;
 		}
 		function testNums(){
