@@ -5,7 +5,7 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
 	
-	class Conexao{
+class Conexao{
 		
 	function __contruct(){
 		$this->connect();
@@ -13,7 +13,7 @@
 	function __destruct(){
 		$this->close();
 	}
-	function connect(){
+	function connect(){//@TODO NAO ESQUECER DE COLOCAR O NOME CERTO DO BANCO
 		$link=pg_Connect("host=localhost dbname=teste user= postgres password=post123");
 		return $link;
 	}	
@@ -51,8 +51,5 @@
 	function close(){
 		pg_close();
 	}
-
-	//pg_close($link);
-	}
-#	phpinfo();
+}
 ?>
