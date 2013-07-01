@@ -1,0 +1,12 @@
+<!DOCTYPE php>
+<html>
+	<title>MyCloset</title>
+	<body>
+		<?php
+				$database="teste";
+				$con=new Conexao();
+				$link=$con->connect($database);
+				$con->query($link,"SELECT * FROM testes1");
+		?>
+	</body>
+</html>

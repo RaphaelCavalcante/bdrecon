@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;bdrecon/projectSet.psf&apos;" deleteContents="false" description="Delete resource &apos;bdrecon/projectSet.psf&apos;" element1="/bdrecon/projectSet.psf" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1372622847045"/>
+</session>

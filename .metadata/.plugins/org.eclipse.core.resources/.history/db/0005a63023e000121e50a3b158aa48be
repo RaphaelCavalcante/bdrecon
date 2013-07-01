@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<title>MyCloset</title>
+	<body>
+		<?php
+				
+				if(isset($_POST["nome"]))
+					echo "Raphael"+$_POST["nome"];
+				/*error_reporting(E_ALL);
+				ini_set('display_errors', '1');
+				
+				require_once __DIR__ . '/pgsql.php';
+				
+				$database="teste";
+				$con=new Conexao();
+				$link=$con->connect();
+				$con->query($link,"SELECT * FROM testes1");
+				*/
+		?>
+		
+		
+		<form method="post" action="index.php">
+			<input type="text" name="nome">
+			<input type="submit" />
+		</form>
+	</body>
+</html>

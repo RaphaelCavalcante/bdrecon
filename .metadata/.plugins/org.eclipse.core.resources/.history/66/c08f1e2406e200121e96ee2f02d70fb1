@@ -11,7 +11,7 @@
 				if(isset($_POST)){
 					$array=array(0=>$_POST["nome1"]);
 					$teste=new Conexao();
-					$teste->add(NULL,$array,count($_POST), "TABLE", NULL);
+					$teste->add(NULL,$array,count($_POST));
 					//echo count($_POST);
 				}
 				/*

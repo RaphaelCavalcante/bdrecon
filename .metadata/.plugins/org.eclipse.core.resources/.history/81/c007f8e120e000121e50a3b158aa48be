@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<title>MyCloset</title>
+	<body>
+		<?php
+				
+				
+				error_reporting(E_ALL);
+				ini_set('display_errors', '1');
+				
+				$database="teste";
+				$con=new Conexao();
+				$link=$con;
+				$con->query($link,"SELECT * FROM testes1");
+				
+		?>
+	</body>
+</html>

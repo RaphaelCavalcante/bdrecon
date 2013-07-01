@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<title>MyCloset</title>
+	<body>
+		<?php
+				
+				$_POST["nome"];
+				/*error_reporting(E_ALL);
+				ini_set('display_errors', '1');
+				
+				require_once __DIR__ . '/pgsql.php';
+				
+				$database="teste";
+				$con=new Conexao();
+				$link=$con->connect();
+				$con->query($link,"SELECT * FROM testes1");
+				*/
+		?>
+		
+		
+		<form id="nome" method="post" action="index.php">
+			<input type="text">
+			<input type="submit" />
+		</form>
+	</body>
+</html>
