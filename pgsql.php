@@ -13,8 +13,7 @@ class Conexao{
 	function __destruct(){
 		$this->close();
 	}
-	function connect(){
-		//@TODO NAO ESQUECER DE COLOCAR O NOME CERTO DO BANCO
+	function connect(){//@TODO NAO ESQUECER DE COLOCAR O NOME CERTO DO BANCO
 		$link=pg_Connect("host=localhost dbname=teste user= postgres password=post123");
 		return $link;
 	}	
