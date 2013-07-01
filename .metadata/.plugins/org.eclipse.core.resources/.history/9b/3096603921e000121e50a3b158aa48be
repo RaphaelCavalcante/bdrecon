@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<title>MyCloset</title>
+	<body>
+		<?php
+				
+				
+				error_reporting(E_ALL);
+				ini_set('display_errors', '1');
+				
+				require_once __DIR__ . '/pgsql.php';
+				
+				$database="teste";
+				$con=new Conexao();
+				$link=$con->connect();
+				$con->query($con,"SELECT * FROM testes1");
+				
+		?>
+	</body>
+</html>

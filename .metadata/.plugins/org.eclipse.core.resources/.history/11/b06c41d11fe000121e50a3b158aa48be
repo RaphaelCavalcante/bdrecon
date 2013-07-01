@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+	<title>MyCloset</title>
+	<body>
+		<?php
+				$con=new Conexao();
+				
+		?>
+	</body>
+</html>

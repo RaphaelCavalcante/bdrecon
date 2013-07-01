@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<title>MyCloset</title>
+	<body>
+		<?php
+				
+				error_reporting(E_ALL);
+				ini_set('display_errors', '1');
+
+				require_once __DIR__ . '/pgsql.php';
+				if(isset($_POST)){
+					
+					$array[]=array($_POST["nome1"],$_POST["nome2"],$_POST["nome3"],$_POST["nome4"]);
+					$teste=new Conexao();
+					$teste->add(NULL,$array,NULL);
+
+				}
+				/*
+				
+				
+				$database="teste";
+				$con=new Conexao();
+				$link=$con->connect();
+				$con->query($link,"SELECT * FROM testes1");
+				*/
+		?>
+		
+		
+		<form name="nomes" method="post" action="index.php">
+			<input type="text" name="nome1">
+			<input type="text" name="nome2">
+			<input type="text" name="nome3">
+			<input type="text" name="nome4">
+			<input type="submit" />
+		</form>
+	</body>
+</html>
