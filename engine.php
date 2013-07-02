@@ -5,7 +5,7 @@
 	$cor;*/
 	class roupa{
 		function __contruct(){
-			$this->criaRoupa();
+			$this->criaRoupa();//comentario
 		}
 		function criaRoupa($tipo1,$tamanho1,$estilo1,$cor1){
 			$arrayTipo=array();
