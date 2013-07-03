@@ -1,8 +1,5 @@
 <?php
-	/*$tipo;
-	$tamanho;
-	$estilo;
-	$cor;*/
+	
 	class roupa{
 		function __contruct(){
 			$this->criaRoupa();//comentario
@@ -16,6 +13,7 @@
 			return $arrayTipo;
 		}
 	}
+	
 	class Engine{
 		function __contruct(){
 			$this->engine();
@@ -23,10 +21,12 @@
 		function __destruct(){
 			$this->close();
 		}
+		//Gerar Perfil user
 		function genPerfil(){
 			$perfil=$obj->criaRoupa(rand(0,3), rand(0,4), rand(0,3), rand(0,4));
 			return $perfil;
 		}
+		//Perfis dos 100 produtos a serem cadastrados no banco
 		function testNums(){
 			$arrayroupas=array();
 			for($i=0;$i<100;$i++){
