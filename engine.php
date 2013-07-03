@@ -3,6 +3,7 @@
 	$tamanho;
 	$estilo;
 	$cor;*/
+	
 	class roupa{
 		function __contruct(){
 			$this->criaRoupa();//comentario
@@ -16,6 +17,7 @@
 			return $arrayTipo;
 		}
 	}
+	
 	class Engine{
 		function __contruct(){
 			$this->engine();
@@ -24,6 +26,7 @@
 			$this->close();
 		}
 		function genPerfil(){
+			$obj=new roupa();
 			$perfil=$obj->criaRoupa(rand(0,3), rand(0,4), rand(0,3), rand(0,4));
 			return $perfil;
 		}
@@ -35,8 +38,16 @@
 				
 				array_push($arrayroupas,$roupa);
 			}
-			
 		return $arrayroupas;
+		}
+		
+		function euclidian($perfil,$produto,$i){
+			$recomenda=0;
+			
+			for ($j=0;$j<count($produto[$i]);$j++){
+				$recomenda=((($perfil[$j]-$produto[$i][$j])*($perfil[$j]-$produto[$i][$j])));
+			}
+			return $recomenda;
 		}
 	}
 ?>
